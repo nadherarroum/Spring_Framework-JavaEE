@@ -4,41 +4,22 @@ public class Person {
 
     private int id;
     private String username;
+    private Addresses addresses;
+
 
     public Person() {
         super();
     }
 
-    public Person(int id) {
-        this.id = id;
-    }
-
-    public Person(String username) {
-        this.username = username;
-    }
-
-    public Person(int id, String username) {
+    public Person(int id, String username, Addresses addresses) {
         this.id = id;
         this.username = username;
+        this.addresses = addresses;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
     public void display(){
-        System.out.println("ID : "+id+" "+"Username : "+username);
+        System.out.println("- ID : "+id+"\n"+"- Username : "+username);
+        System.out.println(addresses.infoAddress());
     }
 }

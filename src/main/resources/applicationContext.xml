@@ -3,9 +3,18 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="add" class="com.nadherarroum.spring_frameworkjavaee.Addresses">
+        <constructor-arg value="12345678"></constructor-arg>
+        <constructor-arg value="nadher@test.com"></constructor-arg>
+        <constructor-arg value="Tunis"></constructor-arg>
+        <constructor-arg value="Ariana"></constructor-arg>
+        <constructor-arg value="123"></constructor-arg>
+    </bean>
+
     <bean id="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
         <constructor-arg value="10" type="int"></constructor-arg>
         <constructor-arg value="Nadher"></constructor-arg>
+        <constructor-arg ref="add"></constructor-arg>
     </bean>
 
 </beans>
