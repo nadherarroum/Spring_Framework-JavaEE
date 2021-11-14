@@ -10,13 +10,16 @@
         <constructor-arg value="Ariana"></constructor-arg>
         <constructor-arg value="123"></constructor-arg>
     </bean>
-<!--
+
     <bean id="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
         <constructor-arg value="10" type="int"></constructor-arg>
         <constructor-arg value="Nadher"></constructor-arg>
+    </bean>
+
+    <bean id="p1" parent="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
         <constructor-arg ref="add"></constructor-arg>
     </bean>
-    -->
+
     <!--
     <bean id="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
         <constructor-arg value="10" type="int"></constructor-arg>
@@ -33,6 +36,7 @@
         </constructor-arg>
     </bean>
     -->
+    <!--
     <bean id="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
         <constructor-arg value="10" type="int"></constructor-arg>
         <constructor-arg value="Nadher"></constructor-arg>
@@ -47,4 +51,5 @@
             </map>
         </constructor-arg>
     </bean>
+    -->
 </beans>

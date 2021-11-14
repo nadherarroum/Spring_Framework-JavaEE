@@ -19,11 +19,11 @@ public class Addresses {
 
     public String infoAddress(){
         return (
-                "- Phone : " + phone +
-                "\n- Email :" + email +
-                "\n- Country : " + country +
-                "\n- City : "+city +
-                "\n- Street Number : " + streetNum
+                "\t> Phone : " + phone +
+                "\n\t> Email :" + email +
+                "\n\t> Country : " + country +
+                "\n\t> City : "+city +
+                "\n\t> Street Number : " + streetNum
         );
     }
 
