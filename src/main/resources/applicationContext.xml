@@ -17,10 +17,10 @@
         <constructor-arg ref="add"></constructor-arg>
     </bean>
     -->
+    <!--
     <bean id="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
         <constructor-arg value="10" type="int"></constructor-arg>
         <constructor-arg value="Nadher"></constructor-arg>
-        <!--constructor-arg value="List"></constructor-arg-->
         <constructor-arg>
             <list>
                 <value>> Java</value>
@@ -30,6 +30,21 @@
                 <value>> Docker</value>
                 <value>> AWS</value>
             </list>
+        </constructor-arg>
+    </bean>
+    -->
+    <bean id="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
+        <constructor-arg value="10" type="int"></constructor-arg>
+        <constructor-arg value="Nadher"></constructor-arg>
+        <constructor-arg>
+            <map>
+                <entry key="java" value="Java is my love"></entry>
+                <entry key="python" value= "Python is my love"></entry>
+                <entry key="php" value= "PHP is my love"></entry>
+                <entry key="linux" value= "Linux is my love"></entry>
+                <entry key="docker" value= "Docker is my love"></entry>
+                <entry key="aws" value= "AWS is my love"></entry>
+            </map>
         </constructor-arg>
     </bean>
 </beans>
