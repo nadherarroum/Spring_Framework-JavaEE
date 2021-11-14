@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
 
     <bean id="add" class="com.nadherarroum.spring_frameworkjavaee.Addresses">
         <constructor-arg value="12345678"></constructor-arg>
@@ -10,11 +10,26 @@
         <constructor-arg value="Ariana"></constructor-arg>
         <constructor-arg value="123"></constructor-arg>
     </bean>
-
+<!--
     <bean id="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
         <constructor-arg value="10" type="int"></constructor-arg>
         <constructor-arg value="Nadher"></constructor-arg>
         <constructor-arg ref="add"></constructor-arg>
     </bean>
-
+    -->
+    <bean id="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
+        <constructor-arg value="10" type="int"></constructor-arg>
+        <constructor-arg value="Nadher"></constructor-arg>
+        <!--constructor-arg value="List"></constructor-arg-->
+        <constructor-arg>
+            <list>
+                <value>> Java</value>
+                <value>> Python</value>
+                <value>> PHP</value>
+                <value>> Linux</value>
+                <value>> Docker</value>
+                <value>> AWS</value>
+            </list>
+        </constructor-arg>
+    </bean>
 </beans>
