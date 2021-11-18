@@ -3,67 +3,19 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean id="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
-        <property name="id">
-            <value>1</value>
-        </property>
-        <property name="username">
-            <value>Nadher Arroum</value>
-        </property>
-        <property name="job">
-            <value>Software engineer</value>
-        </property>
-    </bean>
-
-    <!--
     <bean id="add" class="com.nadherarroum.spring_frameworkjavaee.Addresses">
-        <constructor-arg value="12345678"></constructor-arg>
-        <constructor-arg value="nadher@test.com"></constructor-arg>
-        <constructor-arg value="Tunis"></constructor-arg>
-        <constructor-arg value="Ariana"></constructor-arg>
-        <constructor-arg value="123"></constructor-arg>
+        <property name="phone" value="12345678"></property>
+        <property name="email" value="nadher@test.com"></property>
+        <property name="country" value="Tunis"></property>
+        <property name="city" value="Ariana"></property>
+        <property name="streetNum" value="123"></property>
     </bean>
 
     <bean id="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
-        <constructor-arg value="10" type="int"></constructor-arg>
-        <constructor-arg value="Nadher"></constructor-arg>
+        <property name="id" value="55"></property>
+        <property name="username" value="Nadher Arroum"></property>
+        <property name="addresses" ref="add"></property>
     </bean>
 
-    <bean id="p1" parent="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
-        <constructor-arg ref="add"></constructor-arg>
-    </bean>
-    -->
 
-    <!--
-    <bean id="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
-        <constructor-arg value="10" type="int"></constructor-arg>
-        <constructor-arg value="Nadher"></constructor-arg>
-        <constructor-arg>
-            <list>
-                <value>> Java</value>
-                <value>> Python</value>
-                <value>> PHP</value>
-                <value>> Linux</value>
-                <value>> Docker</value>
-                <value>> AWS</value>
-            </list>
-        </constructor-arg>
-    </bean>
-    -->
-    <!--
-    <bean id="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
-        <constructor-arg value="10" type="int"></constructor-arg>
-        <constructor-arg value="Nadher"></constructor-arg>
-        <constructor-arg>
-            <map>
-                <entry key="java" value="Java is my love"></entry>
-                <entry key="python" value= "Python is my love"></entry>
-                <entry key="php" value= "PHP is my love"></entry>
-                <entry key="linux" value= "Linux is my love"></entry>
-                <entry key="docker" value= "Docker is my love"></entry>
-                <entry key="aws" value= "AWS is my love"></entry>
-            </map>
-        </constructor-arg>
-    </bean>
-    -->
 </beans>
