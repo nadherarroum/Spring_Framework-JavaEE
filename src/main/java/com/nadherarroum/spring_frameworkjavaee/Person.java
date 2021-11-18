@@ -9,7 +9,7 @@ public class Person {
 
     private int id;
     private String username;
-    private Addresses addresses;
+    private List<String> list;
 
     public int getId() {
         return id;
@@ -27,18 +27,22 @@ public class Person {
         this.username = username;
     }
 
-    public Addresses getAddresses() {
-        return addresses;
+    public List<String> getList() {
+        return list;
     }
 
-    public void setAddresses(Addresses addresses) {
-        this.addresses = addresses;
+    public void setList(List<String> list) {
+        this.list = list;
     }
 
     public void display() {
         System.out.println("- ID : " + id +
-                "\n" + "- Username : " + username +
-                "\n- Addresses : "+addresses.infoAddress());
+                "\n" + "- Username : " + username);
+
+        Iterator<String> it = list.iterator();
+        while (it.hasNext()){
+            System.out.println(it.next());
+        }
     }
 
 }
