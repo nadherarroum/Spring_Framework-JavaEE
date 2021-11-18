@@ -9,10 +9,40 @@ public class Person {
 
     private int id;
     private String username;
-    private Addresses addresses;
+    private String job;
+    //private Addresses addresses;
     //private List<String> technology;
     //private Map<String,String> technology;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getJob() {
+        return job;
+    }
+
+    public void setJob(String job) {
+        this.job = job;
+    }
+    public void display() {
+        System.out.println("- ID : " + id + "\n" + "- Username : " + username + "\n- Job : "+job);
+    }
+
+
+/*
     public Person() {
         super();
     }
@@ -27,7 +57,7 @@ public class Person {
         this.username = username;
         this.addresses = addresses;
     }
-
+*/
     /*
     public Person(int id, String username, List<String> technology) {
         this.id = id;
@@ -43,10 +73,11 @@ public class Person {
         this.technology = technology;
     }
      */
+    /*
     public void display(){
         System.out.println("- ID : "+id+"\n"+"- Username : "+username);
         System.out.println("- Address : \n"+addresses.infoAddress());
-
+    */
         /*
         Iterator<String> it = technology.iterator();
         while (it.hasNext()){
@@ -61,7 +92,6 @@ public class Person {
             Map.Entry<String,String> entry = it.next();
             System.out.println("> Technology :\t"+entry.getKey()+"\n\t- "+entry.getValue());
         }
-         */
-
     }
+    */
 }
