@@ -8,14 +8,14 @@
     <bean id="p" class="com.nadherarroum.spring_frameworkjavaee.Person">
         <property name="id" value="55"></property>
         <property name="username" value="Nadher Arroum"></property>
-        <property name="list" >
-            <list>
-                    <value>12345678</value>
-                    <value>nadher@test.com</value>
-                    <value>Tunis</value>
-                    <value>Ariana</value>
-                    <value>123</value>
-            </list>
+        <property name="map" >
+            <map>
+                <entry key="Phone" value="12345678"></entry>
+                <entry key="Email" value="nadher@test.com"></entry>
+                <entry key="Country" value="Tunis"></entry>
+                <entry key="City" value="Ariana"></entry>
+                <entry key="Street Number" value="123"></entry>
+            </map>
         </property>
     </bean>
 
